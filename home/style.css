@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------------------NAVBAR*/
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#FFD566, #FF7B7C);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px #19191948;
+    
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.navbar span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar .login{
+    position: relative;
+    left: 40%;
+}
+.navbar .login:hover{
+    cursor: pointer;
+}
+.navbar .oi{
+    position: relative;
+    right: 38%;
+}
+.navbar .profile_image{
+    width: 65px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    right: 40%;
+    border: 2px solid rgba(217, 217, 217, 0.473);
+
+    background: url(./imgs/terry_profImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -20px;
+}
+/*----------------------*/
+
+/*----------------------CONT*/
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.card{
+    position: relative;
+    top: 2.5rem;
+    width: 350px;
+    height: 600px;
+    background-color: orange;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #1919196c;
+    overflow: hidden;
+}
+
+#c1 .campo_texto{
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(#FFD566, #FF7B7C);
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    
+    transition: height 600ms;
+}
+#c1 .campo_texto span{
+    z-index: 999;
+}
+#c2 .campo_texto{
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(#FFD566, #FF7B7C);
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+#c3 .campo_texto{
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(#FFD566, #FF7B7C);
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#c1{
+    background-image: url(./imgs/vendas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#c2{
+    background-image: url(./imgs/Compras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#c3{
+    background-image: url(./imgs/Funcionarios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*----------------------*/
+/*------------C1----------*/
+#c1 .card_hover{
+    display: none;
+    color: white;
+    position: absolute;
+    left: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px; 
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+}
+#c1:hover .card_hover{
+    display: block;
+    position: absolute;
+    top: 100px;
+}
+#c1:hover .expand{
+    transform: translateX(0);
+}
+
+#c1 .expand{
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    transform: translateY(-101%);
+    
+    background: linear-gradient(#FFD566, #FF7B7C);
+    
+    transition: all 200ms;
+}
+/*----------------------*/
